@@ -12,5 +12,28 @@
         {
             
         }
+
+        static int GetNumberOfTrips(string destination)
+        {
+            Console.Write($"Enter number of trips for" + destination + ": ");
+            return int.Parse(Console.ReadLine());
+        }
+
+        static int CalculateTotalMoneySpent(int calgaryTrips, int vancouverTrips, int montrealTrips)
+        {
+            return (calgaryTrips) + (vancouverTrips) + (montrealTrips);
+        }
+
+        static double CalculateAverageMoneySpent(double totalSpent , int totalTrips)
+        {
+            return totalTrips > 0 ? 
+                   totalSpent / totalTrips : 0;
+        }
+
+        static void DisplayResult(double totalMoneySpent, double averageSpent)
+        {
+            Console.WriteLine("Total money spent: $" + totalMoneySpent);
+            Console.WriteLine("Average price calaculation per trip: $" + averageSpent);
+        }
     }
 }
