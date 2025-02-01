@@ -19,7 +19,7 @@
             //Calculation of total amount of money spent 
             int totalSpent = CalculateTotalMoneySpent(calgaryTrips, vancouverTrips, montrealTrips);
 
-            //Calculation of average spent per trip
+            //Calculation of average money spent per trip
             int averageSpent = CalculateAverageMoneySpent(totalSpent, calgaryTrips + vancouverTrips + montrealTrips);
 
             //Displaying the total money spent and average spent per trip
