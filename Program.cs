@@ -3,7 +3,7 @@
     //Task 1 - Total money spent by Carlo
     internal class Program
     {
-        //Initilizing the variables
+        //Initializing the variables
         int CalgaryPrice = 1350;
         int VancouverPrice = 1500;
         int MontrealPrice = 575;
@@ -15,13 +15,14 @@
 
         static int GetNumberOfTrips(string destination)
         {
-            Console.Write($"Enter number of trips for" + destination + ": ");
+            Console.Write("Enter number of trips for" + destination + " : ");
             return int.Parse(Console.ReadLine());
         }
 
         static int CalculateTotalMoneySpent(int calgaryTrips, int vancouverTrips, int montrealTrips)
         {
-            return (calgaryTrips) + (vancouverTrips) + (montrealTrips);
+            int ctms = (calgaryTrips * CalgaryPrice) + (vancouverTrips * VancouverPrice) + (montrealTrips * MontrealPrice)
+            return ctms;
         }
 
         static double CalculateAverageMoneySpent(double totalSpent , int totalTrips)
