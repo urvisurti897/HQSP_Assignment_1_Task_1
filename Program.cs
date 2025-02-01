@@ -1,6 +1,6 @@
-﻿namespace HQSP_Assignment_1
+﻿namespace HQSP_Assignment_1_Task_1
 {
-    //Task 1 - Total money spent by Carlo
+    //Task 1 - Total money spent by Carlo on each trip
     internal class Program
     {
         //Initializing variables with respective prices for each destination
